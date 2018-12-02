@@ -1,0 +1,226 @@
+/* Scale 8pt, 12pt, 18pt, 27pt */
+
+html {
+	background: #f7f7f7;/*url('cropped-headshot.png') no-repeat top center fixed*/; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	
+}
+
+body {
+	font-family: "SF UI Display", Helvetica, Arial, san-serif;
+	font-weight: 200;
+	font-size: 100%;
+	/*margin: 13% 2.5%;*/
+}
+
+#picture {
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	float: left;
+	padding-right: 50px;
+}
+
+#introduction {
+	display: inline;
+	margin-top: -3.5%; 
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 13%;
+}
+
+#picture img {
+	height: 280px;
+	width: 280px;
+}
+
+img.github {
+	height: 50px;
+}
+
+img.medium {
+	height: 45px;
+	padding-top: 10px;
+}
+
+img.linkedin {
+	height: 40px;
+	padding-top: 5px;
+}
+
+#wrapper {
+	background-color: rgba(247, 247, 247, 0.5);
+	padding: 16pt;
+	width: 60%;
+	margin-top: -2.5%; 
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 13%;
+}
+
+p, a, li {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a, a:hover, a:visited, a:active {
+	color: black;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+#wrapper li:hover {
+	background-color: #ABABAE; /*rgba(255, 247, 0, 0.5);*/
+}
+
+li {
+	border-bottom: 1px solid #ccc;
+	padding: 8pt 12pt;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 2em 0 .5em;
+}
+
+ul {
+	font-size: 1.25em;
+	/* margin: 2em 0; */
+}
+
+.list-inline-item {
+	border: none;
+	display: inline-block;
+}
+
+.title {
+	font-size: 1.125em;
+}
+
+.name {
+	display: block;
+	font-size: 1.125em
+}
+
+.description {
+	font-size: 1em;
+	font-weight: 200;
+}
+
+.date, .publisher {
+	font-size: 1em;
+}
+
+.publisher {
+	font-style: italic;
+	font-weight: 200;
+}
+
+.date {
+	color: grey;
+	font-weight: 200;
+}
+
+#years {
+	text-transform: capitalize;
+}
+
+#intro {
+	font-size: 1.75em;
+}
+
+li#contact {
+	vertical-align: 50%;
+}
+
+li#contact:hover {
+	vertical-align: 50%;
+	background-color: none;
+}
+
+a.btn-cta-primary, .btn-cta-primary {
+    background: #000;
+    border: 1px solid #000;
+    color: #f7f7f7;
+    font-weight: 600;
+    /*text-transform: uppercase;*/
+}
+
+.btn, a.btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-family: 'Montserrat', arial, sans-serif;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+@media only screen
+	and (max-width: 1024px) {
+	
+		html {
+			background: #f7f7f7;
+		}
+	
+		body {
+			padding-top: 5em;
+			padding-bottom: 5em;
+			margin: 0 5%;
+		}
+		
+		#wrapper {
+			padding: 0;
+			width: auto;
+		}
+		
+		p, a, li {
+			max-width: none;
+			line-height: 1.25em;
+		}
+		
+		li {
+			padding: 1em .25em;
+		}
+		
+		p {
+			/* margin: 1em auto; */
+		}
+		
+		#greeting:before {
+			background: #f7f7f7 url('images/headshot-crop.jpg') top center no-repeat;
+			background-size: contain;
+			content: "";
+			display: block;
+			height: 350px;
+		}
+		
+	}
+	
+@media only screen 
+  	and (min-device-width: 375px) 
+  	and (max-device-width: 667px) 
+  	and (-webkit-min-device-pixel-ratio: 2) { 
+	  	body {
+			font-size: 100%;
+		}
+		
+		p, a, li {
+			max-width: none;
+		}
+		
+		h2 {
+			font-size: 2em;
+		}
+		
+		#intro:before {
+			height: 700px;
+		}
+  }
