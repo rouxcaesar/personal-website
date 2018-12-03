@@ -50,6 +50,11 @@ img.linkedin {
 	padding-top: 5px;
 }
 
+#background {
+	margin-top: -2.5%;
+	margin-bottom: -2.5%;
+}
+
 #wrapper {
 	background-color: rgba(247, 247, 247, 0.5);
 	padding: 16pt;
@@ -108,6 +113,11 @@ ul {
 	display: block;
 	font-size: 1.125em
 }
+
+ p.about {
+ 	font-size: 1.3em;
+	font-weight: 200;
+ }
 
 .description {
 	font-size: 1em;
