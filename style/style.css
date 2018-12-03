@@ -154,12 +154,11 @@ ul {
 	font-size: 1.75em;
 }
 
-li#contact {
+li#contact, li#resume {
 	vertical-align: 50%;
 }
 
-li#contact:hover {
-	vertical-align: 50%;
+li#contact:hover, li#resume:hover {
 	background-color: none;
 }
 
