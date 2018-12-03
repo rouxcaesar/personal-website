@@ -86,7 +86,7 @@ a, a:hover, a:visited, a:active {
 
 li {
 	border-bottom: 1px solid #ccc;
-	padding: 8pt 12pt;
+	padding: 8pt 12pt 8pt 0pt;
 }
 
 h2 {

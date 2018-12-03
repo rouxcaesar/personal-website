@@ -1,6 +1,5 @@
 Todo list for completing website:
 
-- add an About Me section detailing background, education, and interests
 - add a section detailing technologies that I have experience in
 - make Contact Me button more visually appealing
 - add a Resume link that opens a PDF of my resume
