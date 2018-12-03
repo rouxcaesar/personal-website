@@ -3,3 +3,4 @@ Todo list for completing website:
 - add a section detailing technologies that I have experience in
 - make Contact Me button more visually appealing
 - add a Resume link that opens a PDF of my resume
+- buy a supported custom domain and register with a DNS provider, configure domain with DNS provider, and add to GitHub Pages site
