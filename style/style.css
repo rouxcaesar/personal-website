@@ -113,9 +113,22 @@ a, a:hover, a:visited, a:active {
 	background-color: #f7f7f7; /*rgba(255, 247, 0, 0.5);*/
 }
 
-#skills li {
-	border-bottom: none; /*1px solid #f7f7f7;*/
+#texas4000 p {
+	font-family: "SF UI Display", Helvetica, Arial, san-serif;
+	font-size: 1.3em;
+	font-weight: 200;
+	line-height: 35px;
 }
+
+#texas4000 img {
+	display: inline-block;
+	height: auto;
+	width: 550px;
+}
+
+/*#skills li {
+	border-bottom: 1px solid #f7f7f7;
+}*/
 
 li {
 	border-bottom: 1px solid #ccc;
@@ -150,6 +163,7 @@ ul {
  p.about {
  	font-size: 1.3em;
 	font-weight: 200;
+	line-height: 35px;
  }
 
 .description {
