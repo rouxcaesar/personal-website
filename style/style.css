@@ -109,6 +109,14 @@ a, a:hover, a:visited, a:active {
 	background-color: #ABABAE; /*rgba(255, 247, 0, 0.5);*/
 }
 
+#spacecraft-logo {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	float: left;
+	margin-right: 2.5%;
+}
+
 #skills li:hover {
 	background-color: #f7f7f7; /*rgba(255, 247, 0, 0.5);*/
 }
