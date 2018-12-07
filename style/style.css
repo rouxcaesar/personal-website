@@ -24,10 +24,11 @@ header {
   z-index: 100;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+	background-color: #f7f7f7;
 }
 
 header .nav {
-	position: absolute;
 	right: 50px;
 	display: flex;
 	width: 40%;
@@ -42,7 +43,7 @@ header .nav a {
 }
 
 #picture {
-	margin-top: 2.5%;
+	margin-top: 5.5%;
 	margin-left: 2.5%;
 	float: left;
 	padding-right: 50px;
