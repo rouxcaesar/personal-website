@@ -17,4 +17,14 @@ $(document).on("scroll", function() {
 			$(tag).removeClass("visible");
 		}
 	}
+
+	if ($("#personal").hasClass("visible")) {
+		$("html").css({ 'background-color': '#d85030', 'transition': 'background-color 500ms linear' });
+		$("#personal p").css({ 'color': '#b9c1cb' });
+		// if ($("#background").hasClass("visible") !== true) {
+		// 	$("html").css({'background-color': '#d85030'});
+		// }
+	} else {
+		$("html").css({ 'background-color': '#f7f7f7', 'transition': 'background-color 500ms linear' });
+	}
 })
