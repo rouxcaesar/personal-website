@@ -18,37 +18,68 @@ body {
 header {
 	overflow: hidden;
   width: 100%;
-  box-sizing: border-box;
-  padding: 20px 0px 10px 0px;
+  height: calc(1rem + 5vw);
+  /*box-sizing: border-box;*/
+  padding: 0px 0px;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   position: fixed;
 	background-color: #f7f7f7;
 }
 
-header .nav {
-	right: 50px;
+header .inner-header {
+	/*right: 50px;*/
 	display: flex;
 	width: 100%;
+	align-items: center;
+	height: 100%;
 	justify-content: space-around;
+	position: relative;
 }
 
 a#contact {
-  margin-right: -100px;
+  /*margin-right: -100px;*/
 }
 
-header .nav ul {
-	margin-right: 50%;
-	margin-left: 0;
-	padding-left: 0;
+header .inner-header ul {
+	/*margin-right: 50%;*/
+	/*margin-left: 0;
+	padding-left: 0;*/
 }
 
-header .nav a {
+header .inner-header a {
   color: #000;
   font-family: "SF UI Display", Helvetica, Arial, san-serif;
 	font-weight: 200;
 	font-size: 24px;
+	display: block;
+	height: 50%;
+}
+
+.header-icons {
+  flex: 0 1 15rem;
+  order: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-icon-link {
+	display: block;
+	margin-left: 2rem;
+}
+
+.header-links {
+	display: flex;
+	order: 1;
+	align-items: center;
+	margin-left: -100px;
+	/*flex: 0 1 15rem;*/
+}
+
+.header-links .link {
+	margin-right: 2em;
 }
 
 section {
