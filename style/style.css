@@ -120,24 +120,25 @@ header.load {
 	padding-top: 170px;
 	margin: auto;
 	max-width: 1000px;
-	margin-bottom: 10%;
+	margin-bottom: 20%;
 }
 
 #background {
-	padding-top: 180px;
+	padding-top: 80px;
 	margin: auto;
 	max-width: 1000px;
 	/*margin-bottom: 10%;*/
 	margin-top: -2.5%;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 }
 
 #background p {
 	font-size: 1.75em;
 }
 
+/* the top of this section is being calculated from the top of it's padding!*/
 #spacecraft {
-	/*padding-top: 180px;*/
+	padding-top: 140px;
 	font-size: 1.75em;
 	margin: auto;
 	max-width: 1000px;

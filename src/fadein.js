@@ -29,9 +29,9 @@ $(document).on("scroll", function() {
 		$("html").css({ 'background-color': '#f7f7f7', 'transition': 'background-color 500ms linear' });
 	}
 
-	if ($("#essays").hasClass("visible")) {
+	if ($("#background").hasClass("visible")) {
 		$("html").css({ 'background-color': '#f7f7f7', 'transition': 'background-color 500ms linear' });
-		$("#essays a").css({ 'color': '#000' });
+		$("#background a").css({ 'color': '#000' });
 		// if ($("#background").hasClass("visible") !== true) {
 		// 	$("html").css({'background-color': '#d85030'});
 		// }
