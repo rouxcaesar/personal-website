@@ -127,14 +127,16 @@ header.load {
 	padding-top: 180px;
 	margin: auto;
 	max-width: 1000px;
-	margin-bottom: 10%;
+	/*margin-bottom: 10%;*/
+	margin-top: -2.5%;
+	margin-bottom: 20%;
 }
 
 #background p {
 	font-size: 1.75em;
 }
 
-#spacecraft, #lander {
+#spacecraft {
 	/*padding-top: 180px;*/
 	font-size: 1.75em;
 	margin: auto;
@@ -154,6 +156,10 @@ header.load {
 
 #lander p {
 	color: #b9c1cb;
+}
+
+#lander p.coming-soon {
+	font-weight: 600;
 }
 
 #essays {
@@ -204,11 +210,6 @@ img.medium {
 img.linkedin {
 	height: 35px;
 	/*padding-top: 5px;*/
-}
-
-#background {
-	margin-top: -2.5%;
-	margin-bottom: 20%;
 }
 
 #wrapper {
