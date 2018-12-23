@@ -120,7 +120,28 @@ header.load {
 	padding-top: 170px;
 	margin: auto;
 	max-width: 1000px;
-	margin-bottom: 20%;
+	margin-bottom: 30%;
+}
+
+#scroll {
+	margin-top: 7.5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5%;
+	cursor: pointer;
+	font-family: "Roboto Mono", monospace;
+	color: #000;
+}
+
+#scroll .line {
+  height: 75px;
+  width: 1px;
+  margin: 10px auto 30px auto;
+  background: #000;
+}
+
+small {
+	font-size: 16px;
 }
 
 #background {
@@ -244,6 +265,7 @@ a, a:hover, a:visited, a:active {
 
 #spacecraft p, #lander p {
 	margin: 0;
+	color: #fff;
 }
 
 #spacecraft-logo, #lander-logo {
@@ -260,7 +282,7 @@ a, a:hover, a:visited, a:active {
 	background-color: #f7f7f7; /*rgba(255, 247, 0, 0.5);*/
 }
 
-#texas4000 p {
+/*#texas4000 p {
 	font-family: "SF UI Display", Helvetica, Arial, san-serif;
 	font-size: 1.3em;
 	font-weight: 200;
@@ -271,7 +293,7 @@ a, a:hover, a:visited, a:active {
 	display: inline-block;
 	height: auto;
 	width: 550px;
-}
+}*/
 
 /*.t4klogo {
 	margin-top: 2.5%;
@@ -373,21 +395,107 @@ a.btn-cta-primary, .btn-cta-primary {
 }
 
 @media only screen
-	and (max-width: 1024px) {
+	and (max-width: 1026px) {
 	
 		html {
 			background: #f7f7f7;
 		}
 	
 		body {
-			padding-top: 5em;
+			/*padding-top: 5em;
 			padding-bottom: 5em;
-			margin: 0 5%;
+			margin: 0 5%;*/
 		}
-		
-		#wrapper {
+
+		.header-links {
+			/*display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;*/
+			margin-left: 0;
+		}
+
+		#first {
+			padding-top: 50px;
+			/*padding-top: 170px;*/
+			/*margin: auto;*/
+			/*max-width: 1000px;*/
+			margin-bottom: 30%;
+		}
+
+		#picture {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
 			padding: 0;
-			width: auto;
+			float: none;
+		}
+
+		#picture img {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+
+		#introduction {
+			display: block;
+		}
+
+		#greeting, #background {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+		#intro, p.about {
+			/*font-size: 1.5em;*/
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;	
+			width: 80%;
+		}
+
+		#scroll {
+			margin-top: -4.5%;
+			margin-left: auto;
+			margin-right: auto;
+			width: 5%;
+			cursor: pointer;
+			font-family: "Roboto Mono", monospace;
+			color: #000;
+		}
+
+		#scroll .line {
+		  height: 45px;
+		  width: 1px;
+		  margin: 10px auto 30px auto;
+		  background: #000;
+		}
+
+		#spacecraft, #lander {
+			margin-bottom: 40%;
+		}
+
+		#spacecraft-logo, #lander-logo {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			padding: 0;
+			float: none;
+		}
+
+		#spacecraft p, #lander p {
+			/*font-size: 1.5em;*/
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;	
+			width: 80%;
+		}
+
+		#lander {
+			margin-bottom: 30%
 		}
 		
 		p, a, li {
@@ -403,33 +511,96 @@ a.btn-cta-primary, .btn-cta-primary {
 			/* margin: 1em auto; */
 		}
 		
-		#greeting:before {
-			background: #f7f7f7 url('images/headshot-crop.jpg') top center no-repeat;
+		/*#greeting:before {
+			background: #f7f7f7 url('images/cropped-headshot.png') top center no-repeat;
 			background-size: contain;
 			content: "";
 			display: block;
 			height: 350px;
-		}
+		}*/
 		
 	}
 	
 @media only screen 
-  	and (min-device-width: 375px) 
-  	and (max-device-width: 667px) 
-  	and (-webkit-min-device-pixel-ratio: 2) { 
+  	and (max-device-width: 667px) { 
 	  	body {
-			font-size: 100%;
+			/*font-size: 100%;*/
+		}
+
+		#intro, #background p.about {
+			font-size: 1.25em;
 		}
 		
-		p, a, li {
-			max-width: none;
-		}
-		
-		h2 {
+		/*h2 {
 			font-size: 2em;
-		}
+		}*/
 		
-		#intro:before {
+		/*#intro:before {
 			height: 700px;
-		}
+		}*/
   }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/*@media (min-width: 1281px) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+/*@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+  
+}
