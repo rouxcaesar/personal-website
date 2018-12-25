@@ -6,7 +6,6 @@ html {
 	-moz-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
-	
 }
 
 body {
@@ -19,30 +18,185 @@ body {
 header {
 	overflow: hidden;
   width: 100%;
-  box-sizing: border-box;
-  padding: 20px 10px 10px 28px;
+  height: calc(1rem + 5vw);
+  /*box-sizing: border-box;*/
+  padding: 0px 0px;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  position: fixed;
+	background-color: #f7f7f7;
 }
 
-header .nav {
-	position: absolute;
-	right: 50px;
+header .inner-header {
+	/*right: 50px;*/
 	display: flex;
-	width: 40%;
+	width: 100%;
+	align-items: center;
+	height: 100%;
 	justify-content: space-around;
+	position: relative;
 }
 
-header .nav a {
+a#contact {
+  /*margin-right: -100px;*/
+}
+
+header .inner-header ul {
+	/*margin-right: 50%;*/
+	/*margin-left: 0;
+	padding-left: 0;*/
+}
+
+header .inner-header a {
   color: #000;
   font-family: "SF UI Display", Helvetica, Arial, san-serif;
 	font-weight: 200;
 	font-size: 24px;
+	display: block;
+	height: 50%;
+}
+
+.header-icons {
+  flex: 0 1 15rem;
+  order: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-icon-link {
+	display: block;
+	margin-left: 1rem;
+	text-transform: bold;
+}
+
+.header-links {
+	display: flex;
+	order: 1;
+	align-items: center;
+	margin-left: -100px;
+	/*flex: 0 1 15rem;*/
+}
+
+.header-links .link {
+	margin-right: 2em;
+}
+
+section {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition: all 3s;
+}
+
+section.visible {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+#first, header {
+  opacity: 0;
+  /*font-size: 21px;*/
+  /*margin-top: 25px;*/
+  /*text-align: center;*/
+
+  -webkit-transition: opacity 1s ease-in;
+     -moz-transition: opacity 1s ease-in;
+      -ms-transition: opacity 1s ease-in;
+       -o-transition: opacity 1s ease-in;
+          transition: opacity 1s ease-in;
+}
+
+#first.load {
+	opacity: 1;
+}
+
+header.load {
+	opacity: 1;
+	/*background-color: transparent;*/
+}
+
+#first {
+	padding-top: 170px;
+	margin: auto;
+	max-width: 1000px;
+	margin-bottom: 30%;
+}
+
+#scroll {
+	margin-top: 7.5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5%;
+	cursor: pointer;
+	font-family: "Roboto Mono", monospace;
+	color: #000;
+}
+
+#scroll .line {
+  height: 75px;
+  width: 1px;
+  margin: 10px auto 30px auto;
+  background: #000;
+}
+
+small {
+	font-size: 16px;
+}
+
+#background {
+	padding-top: 80px;
+	margin: auto;
+	max-width: 1000px;
+	/*margin-bottom: 10%;*/
+	margin-top: -2.5%;
+	margin-bottom: 10%;
+}
+
+#background p {
+	font-size: 1.75em;
+}
+
+/* the top of this section is being calculated from the top of it's padding!*/
+#spacecraft {
+	padding-top: 140px;
+	font-size: 1.75em;
+	margin: auto;
+	max-width: 1000px;
+	margin-bottom: 20%;
+	/*margin-left: 30%*/;
+}
+
+#lander {
+	/*padding-top: 180px;*/
+	font-size: 1.75em;
+	margin: auto;
+	max-width: 1000px;
+	margin-bottom: 20%;
+	/*margin-left: 30%*/;
+}
+
+#lander p {
+	color: #b9c1cb;
+}
+
+#lander p.coming-soon {
+	font-weight: 600;
+}
+
+#essays {
+	/*font-size: 1.75em;*/
+	margin: auto;
+	max-width: 1000px;
+	margin-bottom: 20%;
+}
+
+#essays a {
+	font-size: 1.5em;
 }
 
 #picture {
-	margin-top: 2.5%;
+	margin-top: 5.5%;
 	margin-left: 2.5%;
 	float: left;
 	padding-right: 50px;
@@ -57,27 +211,27 @@ header .nav a {
 }
 
 #picture img {
-	height: 280px;
-	width: 280px;
+	margin-top: 15%;
+	height: 220px;
+	width: 220px;
+}
+
+ul.social {
+	margin-top: -1%;
 }
 
 img.github {
-	height: 50px;
+	height: 35px;
 }
 
 img.medium {
-	height: 45px;
-	padding-top: 10px;
+	height: 35px;
+	/*padding-top: 10px;*/
 }
 
 img.linkedin {
-	height: 40px;
-	padding-top: 5px;
-}
-
-#background {
-	margin-top: -2.5%;
-	margin-bottom: -2.5%;
+	height: 35px;
+	/*padding-top: 5px;*/
 }
 
 #wrapper {
@@ -109,19 +263,26 @@ a, a:hover, a:visited, a:active {
 	background-color: #ABABAE; /*rgba(255, 247, 0, 0.5);*/
 }
 
-#spacecraft-logo {
-	height: 100px;
-	width: 100px;
-	display: inline-block;
-	float: left;
-	margin-right: 2.5%;
+#spacecraft p, #lander p {
+	margin: 0;
+	color: #fff;
+}
+
+#spacecraft-logo, #lander-logo {
+	height: auto;
+	/*width: 700px;*/
+	max-width: 800px;
+	/*display: inline-block;*/
+	/*float: left;*/
+	/*margin-right: 2.5%;*/
+	/*margin-left: 15%;*/
 }
 
 #skills li:hover {
 	background-color: #f7f7f7; /*rgba(255, 247, 0, 0.5);*/
 }
 
-#texas4000 p {
+/*#texas4000 p {
 	font-family: "SF UI Display", Helvetica, Arial, san-serif;
 	font-size: 1.3em;
 	font-weight: 200;
@@ -132,7 +293,7 @@ a, a:hover, a:visited, a:active {
 	display: inline-block;
 	height: auto;
 	width: 550px;
-}
+}*/
 
 /*.t4klogo {
 	margin-top: 2.5%;
@@ -154,13 +315,15 @@ h2 {
 }
 
 ul {
-	font-size: 1.25em;
+	/*font-size: 1.25em;*/
 	/* margin: 2em 0; */
 }
 
 .list-inline-item {
 	border: none;
 	display: inline-block;
+	margin-left: -2.5%;
+	padding-right: 20px;
 }
 
 .title {
@@ -232,21 +395,107 @@ a.btn-cta-primary, .btn-cta-primary {
 }
 
 @media only screen
-	and (max-width: 1024px) {
+	and (max-width: 1026px) {
 	
 		html {
 			background: #f7f7f7;
 		}
 	
 		body {
-			padding-top: 5em;
+			/*padding-top: 5em;
 			padding-bottom: 5em;
-			margin: 0 5%;
+			margin: 0 5%;*/
 		}
-		
-		#wrapper {
+
+		.header-links {
+			/*display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;*/
+			margin-left: 0;
+		}
+
+		#first {
+			padding-top: 50px;
+			/*padding-top: 170px;*/
+			/*margin: auto;*/
+			/*max-width: 1000px;*/
+			margin-bottom: 30%;
+		}
+
+		#picture {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
 			padding: 0;
-			width: auto;
+			float: none;
+		}
+
+		#picture img {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+
+		#introduction {
+			display: block;
+		}
+
+		#greeting, #background {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+		#intro, p.about {
+			/*font-size: 1.5em;*/
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;	
+			width: 80%;
+		}
+
+		#scroll {
+			margin-top: -4.5%;
+			margin-left: auto;
+			margin-right: auto;
+			width: 5%;
+			cursor: pointer;
+			font-family: "Roboto Mono", monospace;
+			color: #000;
+		}
+
+		#scroll .line {
+		  height: 45px;
+		  width: 1px;
+		  margin: 10px auto 30px auto;
+		  background: #000;
+		}
+
+		#spacecraft, #lander {
+			margin-bottom: 40%;
+		}
+
+		#spacecraft-logo, #lander-logo {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			padding: 0;
+			float: none;
+		}
+
+		#spacecraft p, #lander p {
+			/*font-size: 1.5em;*/
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;	
+			width: 80%;
+		}
+
+		#lander {
+			margin-bottom: 30%
 		}
 		
 		p, a, li {
@@ -262,33 +511,96 @@ a.btn-cta-primary, .btn-cta-primary {
 			/* margin: 1em auto; */
 		}
 		
-		#greeting:before {
-			background: #f7f7f7 url('images/headshot-crop.jpg') top center no-repeat;
+		/*#greeting:before {
+			background: #f7f7f7 url('images/cropped-headshot.png') top center no-repeat;
 			background-size: contain;
 			content: "";
 			display: block;
 			height: 350px;
-		}
+		}*/
 		
 	}
 	
 @media only screen 
-  	and (min-device-width: 375px) 
-  	and (max-device-width: 667px) 
-  	and (-webkit-min-device-pixel-ratio: 2) { 
+  	and (max-device-width: 667px) { 
 	  	body {
-			font-size: 100%;
+			/*font-size: 100%;*/
+		}
+
+		#intro, #background p.about {
+			font-size: 1.25em;
 		}
 		
-		p, a, li {
-			max-width: none;
-		}
-		
-		h2 {
+		/*h2 {
 			font-size: 2em;
-		}
+		}*/
 		
-		#intro:before {
+		/*#intro:before {
 			height: 700px;
-		}
+		}*/
   }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/*@media (min-width: 1281px) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+/*@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}*/
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+  
+}
