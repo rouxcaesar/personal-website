@@ -38,16 +38,6 @@ header .inner-header {
 	position: relative;
 }
 
-a#contact {
-  /*margin-right: -100px;*/
-}
-
-header .inner-header ul {
-	/*margin-right: 50%;*/
-	/*margin-left: 0;
-	padding-left: 0;*/
-}
-
 header .inner-header a {
   color: #000;
   font-family: "SF UI Display", Helvetica, Arial, san-serif;
@@ -282,27 +272,6 @@ a, a:hover, a:visited, a:active {
 	background-color: #f7f7f7; /*rgba(255, 247, 0, 0.5);*/
 }
 
-/*#texas4000 p {
-	font-family: "SF UI Display", Helvetica, Arial, san-serif;
-	font-size: 1.3em;
-	font-weight: 200;
-	line-height: 35px;
-}
-
-#texas4000 img {
-	display: inline-block;
-	height: auto;
-	width: 550px;
-}*/
-
-/*.t4klogo {
-	margin-top: 2.5%;
-}*/
-
-/*#skills li {
-	border-bottom: 1px solid #f7f7f7;
-}*/
-
 li {
 	border-bottom: 1px solid #ccc;
 	padding: 8pt 12pt 8pt 0pt;
@@ -312,11 +281,6 @@ h2 {
 	font-size: 2em;
 	font-weight: bold;
 	margin: 2em 0 .5em;
-}
-
-ul {
-	/*font-size: 1.25em;*/
-	/* margin: 2em 0; */
 }
 
 .list-inline-item {
@@ -511,14 +475,6 @@ a.btn-cta-primary, .btn-cta-primary {
 			/* margin: 1em auto; */
 		}
 		
-		/*#greeting:before {
-			background: #f7f7f7 url('images/cropped-headshot.png') top center no-repeat;
-			background-size: contain;
-			content: "";
-			display: block;
-			height: 350px;
-		}*/
-		
 	}
 	
 @media only screen 
@@ -531,13 +487,6 @@ a.btn-cta-primary, .btn-cta-primary {
 			font-size: 1.25em;
 		}
 		
-		/*h2 {
-			font-size: 2em;
-		}*/
-		
-		/*#intro:before {
-			height: 700px;
-		}*/
   }
 
 /* 
