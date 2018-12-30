@@ -18,13 +18,13 @@ body {
 header {
 	overflow: hidden;
   width: 100%;
-  height: calc(1rem + 5vw);
+  height: calc(1rem + 3vw);
   /*box-sizing: border-box;*/
   padding: 0px 0px;
   z-index: 100;
   display: flex;
   /*justify-content: space-between;*/
-  position: fixed;
+  /*position: fixed;*/
 	background-color: #f7f7f7;
 }
 
@@ -41,7 +41,7 @@ header .inner-header {
 header .inner-header a {
   color: #000;
   font-family: "SF UI Display", Helvetica, Arial, san-serif;
-	font-weight: 200;
+	font-weight: 600;
 	font-size: 24px;
 	display: block;
 	height: 50%;
@@ -158,16 +158,23 @@ small {
 }
 
 #presentation {
-	padding-top: 140px;
+	padding-top: 57.5%;
 	font-size: 1.5em;
 	color: #fff;
-	margin: auto;
-	max-width: 100%;
+	display: flex;
+	position: relative;
+	/*margin: auto;*/
+	/*max-width: 100%;*/
 	margin-bottom: 20%;
 }
 
 #presentation iframe {
-	margin-left: 5%;
+	/*margin-left: 5%;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 95%;
 }
 
 #presentation_details {
