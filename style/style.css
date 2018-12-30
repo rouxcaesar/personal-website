@@ -110,7 +110,7 @@ header.load {
 	padding-top: 170px;
 	margin: auto;
 	max-width: 1000px;
-	margin-bottom: 30%;
+	margin-bottom: 20%;
 }
 
 #scroll {
@@ -149,7 +149,7 @@ small {
 
 /* the top of this section is being calculated from the top of it's padding!*/
 #spacecraft {
-	padding-top: 140px;
+	padding-top: 80px;
 	font-size: 1.75em;
 	margin: auto;
 	max-width: 1000px;
@@ -174,17 +174,6 @@ small {
 	font-weight: 600;
 }
 
-#essays {
-	/*font-size: 1.75em;*/
-	margin: auto;
-	max-width: 1000px;
-	margin-bottom: 20%;
-}
-
-#essays a {
-	font-size: 1.5em;
-}
-
 #picture {
 	margin-top: 5.5%;
 	margin-left: 2.5%;
@@ -201,13 +190,9 @@ small {
 }
 
 #picture img {
-	margin-top: 15%;
-	height: 220px;
-	width: 220px;
-}
-
-ul.social {
-	margin-top: -1%;
+	margin-top: -2%;
+	height: 320px;
+	width: 320px;
 }
 
 img.github {
@@ -224,7 +209,7 @@ img.linkedin {
 	/*padding-top: 5px;*/
 }
 
-#wrapper {
+/*#wrapper {
 	background-color: rgba(247, 247, 247, 0.5);
 	padding: 16pt;
 	width: 60%;
@@ -232,7 +217,11 @@ img.linkedin {
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 	margin-bottom: 13%;
-}
+}*/
+
+/*#wrapper li:hover {
+	background-color: #ABABAE; rgba(255, 247, 0, 0.5);
+}*/
 
 p, a, li {
 	font-size: 1em;
@@ -247,10 +236,6 @@ a, a:hover, a:visited, a:active {
 	color: black;
 	font-weight: 500;
 	text-decoration: none;
-}
-
-#wrapper li:hover {
-	background-color: #ABABAE; /*rgba(255, 247, 0, 0.5);*/
 }
 
 #spacecraft p, #lander p {
@@ -308,24 +293,6 @@ h2 {
 .description {
 	font-size: 1em;
 	font-weight: 200;
-}
-
-.date, .publisher {
-	font-size: 1em;
-}
-
-.publisher {
-	font-style: italic;
-	font-weight: 200;
-}
-
-.date {
-	color: grey;
-	font-weight: 200;
-}
-
-#years {
-	text-transform: capitalize;
 }
 
 #intro {
