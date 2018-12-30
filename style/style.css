@@ -157,6 +157,44 @@ small {
 	/*margin-left: 30%*/;
 }
 
+#presentation {
+	padding-top: 140px;
+	font-size: 1.5em;
+	color: #fff;
+	margin: auto;
+	max-width: 100%;
+	margin-bottom: 20%;
+}
+
+#presentation iframe {
+	margin-left: 15%;
+}
+
+#presentation_details {
+	display: inline;
+	/*margin-top: -3.5%; */
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 13%;
+	float: right;
+	width: 50%;
+}
+
+#presentation_details h3 {
+	font-size: 1.5em;
+	text-transform: bold;
+}
+
+#presentation_details p a {
+	color: #fff;
+	
+}
+
+#presentation_details a.slides {
+	color: #fff;
+	font-weight: 600;
+}
+
 #lander {
 	/*padding-top: 180px;*/
 	font-size: 1.75em;
