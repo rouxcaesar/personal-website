@@ -15,6 +15,10 @@ body {
 	/*margin: 13% 2.5%;*/
 }
 
+.hidden {
+	display: none;
+}
+
 header {
 	overflow: hidden;
   width: 100%;
@@ -163,41 +167,68 @@ small {
 	color: #fff;
 	display: flex;
 	position: relative;
-	/*margin: auto;*/
+	margin: auto;
 	/*max-width: 100%;*/
-	margin-bottom: 20%;
+	/*margin-bottom: 20%;*/
 }
 
 #presentation iframe {
 	/*margin-left: 5%;*/
 	position: absolute;
+	z-index: 0;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 95%;
 }
 
-#presentation_details {
+/*#presentation_details {
 	display: inline;
-	/*margin-top: -3.5%; */
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 	margin-bottom: 13%;
 	float: right;
 	width: 50%;
+}*/
+
+/*article {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+	flex: 1.02;
+}*/
+
+#presentation article {
+	/*display: flex;*/
+	/*display: inline;*/
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+	flex: 1.02;
+	z-index: 1;
+	position: absolute;
+	width: 50%;
+	height: 70%;
+	background-color: rgba(0, 10, 20, 0.6);
+	margin-top: -58%;
 }
 
-#presentation_details h3 {
+.box {
+	margin-left: 5%;
+	width: 55%;
+}
+
+#presentation article h3 {
 	font-size: 1.5em;
 	text-transform: bold;
 }
 
-#presentation_details p a {
+#presentation article p a {
 	color: #fff;
-	
 }
 
-#presentation_details a.slides {
+#presentation article a.slides {
 	color: #fff;
 	font-weight: 600;
 }

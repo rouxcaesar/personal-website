@@ -1,6 +1,11 @@
 $(document).ready( function() {
 	$("header").addClass("load");
 	$("#first").addClass("load");
+	// $("#presentation").click(function(e) {
+	// 	e.preventDefault();
+	// 	console.log("VIDEO CLICKED");
+	// 	$("#presentation article").toggleClass('hidden');
+	// })
 })
 
 $(document).on("scroll", function() {

@@ -1,0 +1,4 @@
+Todos:
+
+- Adjust overlay of text on video
+- Make overlay and contents responsive to smaller displays
