@@ -29,6 +29,22 @@ $(document).on("scroll", function() {
 		$("html").css({ 'background-color': '#f7f7f7', 'transition': 'background-color 500ms linear' });
 	}
 
+	if ($("#presentation").hasClass("visible")) {
+		$("html").css({ 'background-color': '#435169', 'transition': 'background-color 500ms linear' });
+		$("#spacecraft p").css({ 'color': '#fff' });
+		// if ($("#background").hasClass("visible") !== true) {
+		// 	$("html").css({'background-color': '#d85030'});
+		// }
+	}
+
+	if ($("#lander").hasClass("visible")) {
+		$("html").css({ 'background-color': '#d85030', 'transition': 'background-color 500ms linear' });
+		$("#lander p").css({ 'color': '#fff' });
+		// if ($("#background").hasClass("visible") !== true) {
+		// 	$("html").css({'background-color': '#d85030'});
+		// }
+	}
+
 	if ($("#background").hasClass("visible")) {
 		$("html").css({ 'background-color': '#f7f7f7', 'transition': 'background-color 500ms linear' });
 		$("#background a").css({ 'color': '#000' });

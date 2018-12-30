@@ -18,7 +18,7 @@ body {
 header {
 	overflow: hidden;
   width: 100%;
-  height: calc(1rem + 5vw);
+  height: calc(1rem + 3vw);
   /*box-sizing: border-box;*/
   padding: 0px 0px;
   z-index: 100;
@@ -50,6 +50,7 @@ header .inner-header a {
 .header-icons {
   flex: 0 1 15rem;
   order: 3;
+  padding-top: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
