@@ -182,8 +182,8 @@ small {
 }
 
 #presentation_details h3 {
-	font-size: 1.5em;
-	text-transform: bold;
+	font-size: 2em;
+	font-weight: bold;
 }
 
 #presentation_details p a {
