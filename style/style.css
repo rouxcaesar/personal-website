@@ -24,7 +24,7 @@ header {
   z-index: 100;
   display: flex;
   /*justify-content: space-between;*/
-  position: fixed;
+  /*position: fixed;*/
 	background-color: #f7f7f7;
 }
 
@@ -50,7 +50,7 @@ header .inner-header a {
 .header-icons {
   flex: 0 1 15rem;
   order: 3;
-  padding-top: 5px;
+  padding-top: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -72,6 +72,8 @@ header .inner-header a {
 
 .header-links .link {
 	margin-right: 2em;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 section {
@@ -136,7 +138,7 @@ small {
 }
 
 #background {
-	padding-top: 80px;
+	/*padding-top: 80px;*/
 	margin: auto;
 	max-width: 1000px;
 	/*margin-bottom: 10%;*/
@@ -146,6 +148,21 @@ small {
 
 #background p {
 	font-size: 1.75em;
+}
+
+#background a button {
+	cursor: pointer;
+	/*background-color: #f7f7f7;*/
+	margin-top: 20px;
+	margin-right: 40px;
+	padding: 16px 32px;
+  color: #000;
+  font-weight: 500 !important;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #000;
 }
 
 /* the top of this section is being calculated from the top of it's padding!*/
