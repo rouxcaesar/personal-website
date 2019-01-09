@@ -115,7 +115,7 @@ header.load {
 }
 
 #scroll {
-	margin-top: 7.5%;
+	/*margin-top: 7.5%;*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 5%;
@@ -336,6 +336,10 @@ h2 {
 
 #intro {
 	font-size: 1.5em;
+}
+
+#intro a {
+	text-decoration: underline;
 }
 
 li#contact, li#resume {
