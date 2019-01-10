@@ -15,6 +15,13 @@ body {
 	/*margin: 13% 2.5%;*/
 }
 
+article {
+	flex: 1.02;
+	/*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
 header {
 	overflow: hidden;
   width: 100%;
@@ -173,6 +180,22 @@ small {
 	max-width: 1000px;
 	margin-bottom: 20%;
 	/*margin-left: 30%*/;
+}
+
+#app {
+	flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#spacecraft h2 {
+	margin: 0;
+}
+
+#spacecraft h2 a {
+	color: #fff;
+	font-size: 45px;
 }
 
 #presentation {
