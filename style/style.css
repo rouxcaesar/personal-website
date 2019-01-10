@@ -120,14 +120,14 @@ header.load {
 }
 
 #first {
-	padding-top: 170px;
+	padding-top: 50px;
 	margin: auto;
 	max-width: 1000px;
 	margin-bottom: 20%;
 }
 
 #scroll {
-	/*margin-top: 7.5%;*/
+	margin-top: 7.5%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 5%;
