@@ -160,7 +160,7 @@ small {
 	font-size: 1.75em;
 }
 
-#background a button {
+#background a button, #projects a button {
 	cursor: pointer;
 	/*background-color: #f7f7f7;*/
 	margin-top: 20px;
@@ -281,9 +281,24 @@ small {
   white-space: nowrap;
 }
 
-#other-projects .full {
+#projects p {
+	font-size: 20px;
+}
+
+#projects .full {
   margin-top: 18px;
   margin-bottom: 24px;
+}
+
+#projects a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#projects a button {
+	background-color: #d85030;
+	color: #fff;
+	border: 2px solid #fff;
 }
 
 .full {
@@ -297,6 +312,7 @@ img.full {
 
 #projects p {
 	color: #b9c1cb;
+	width: 110%;
 }
 
 /*#projects p.coming-soon {
