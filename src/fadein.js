@@ -38,7 +38,7 @@ $(document).on("scroll", function() {
 	}
 
 	if ($("#projects").hasClass("visible")) {
-		$("html").css({ 'background-color': '#d85030', 'transition': 'background-color 500ms linear' });
+		$("html").css({ 'background-color': '#7b899d', 'transition': 'background-color 500ms linear' });
 		$("#projects p").css({ 'color': '#fff' });
 		$("#projects h2").css({ 'color': '#fff' });
 		$("#projects h3").css({ 'color': '#fff' });

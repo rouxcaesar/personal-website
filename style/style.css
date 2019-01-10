@@ -260,9 +260,18 @@ small {
 	/*margin-left: 30%*/;
 }
 
-.box .first {
+/*.box.first {
 	width: 70%;
   margin-left: 10%;
+}*/
+
+.placeholder {
+  filter: opacity(0%);
+}
+
+.box.last {
+	margin-left: 30%;
+  width: 90%;
 }
 
 #projects h3 {
@@ -296,7 +305,7 @@ small {
 }
 
 #projects a button {
-	background-color: #d85030;
+	background-color: #7b899d;
 	color: #fff;
 	border: 2px solid #fff;
 }
