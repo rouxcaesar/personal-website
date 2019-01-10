@@ -17,6 +17,9 @@ body {
 
 article {
 	flex: 1.02;
+	max-width: 50%;
+	margin: 0;
+	padding: 0;
 	/*display: flex;
   justify-content: center;
   align-items: center;*/
@@ -189,6 +192,12 @@ small {
   align-items: center;
 }
 
+#app img {
+	max-width: 80%;
+	border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
 #spacecraft h2 {
 	margin: 0;
 }
@@ -325,7 +334,8 @@ a, a:hover, a:visited, a:active {
 #spacecraft-logo, #lander-logo {
 	height: auto;
 	/*width: 700px;*/
-	max-width: 800px;
+	/*max-width: 800px;*/
+	max-width: 100%;
 	/*display: inline-block;*/
 	/*float: left;*/
 	/*margin-right: 2.5%;*/
