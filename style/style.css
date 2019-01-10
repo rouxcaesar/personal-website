@@ -186,10 +186,6 @@ small {
 	/*margin-left: 30%*/;
 }
 
-#spacecraft article {
-	/*margin-right: 3.5%;*/
-}
-
 #spacecraft .box {
 	margin-left: 7%;
   width: 80%;
@@ -216,6 +212,7 @@ small {
 }
 
 #presentation {
+	display: flex;
 	padding-top: 140px;
 	font-size: 1.5em;
 	color: #fff;
@@ -225,7 +222,7 @@ small {
 }
 
 #presentation iframe {
-	margin-left: 15%;
+	margin-left: 5%;
 }
 
 #presentation_details {
