@@ -123,7 +123,7 @@ header.load {
 	padding-top: 50px;
 	margin: auto;
 	max-width: 1000px;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 }
 
 #scroll {
@@ -177,12 +177,22 @@ small {
 
 /* the top of this section is being calculated from the top of it's padding!*/
 #spacecraft {
+	display: flex;
 	padding-top: 80px;
 	font-size: 1.75em;
 	margin: auto;
-	max-width: 1000px;
+	/*max-width: 1000px;*/
 	margin-bottom: 20%;
 	/*margin-left: 30%*/;
+}
+
+#spacecraft article {
+	/*margin-right: 3.5%;*/
+}
+
+#spacecraft .box {
+	margin-left: 7%;
+  width: 80%;
 }
 
 #app {
@@ -193,18 +203,16 @@ small {
 }
 
 #app img {
-	max-width: 80%;
+	max-width: 105%;
+  margin-left: -6.5%;
 	border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 
-#spacecraft h2 {
-	margin: 0;
-}
-
-#spacecraft h2 a {
+#spacecraft .box a {
 	color: #fff;
-	font-size: 45px;
+	text-decoration: underline;
+	/*font-size: 45px;*/
 }
 
 #presentation {
