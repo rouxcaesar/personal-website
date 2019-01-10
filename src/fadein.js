@@ -40,6 +40,8 @@ $(document).on("scroll", function() {
 	if ($("#projects").hasClass("visible")) {
 		$("html").css({ 'background-color': '#d85030', 'transition': 'background-color 500ms linear' });
 		$("#projects p").css({ 'color': '#fff' });
+		$("#projects h2").css({ 'color': '#fff' });
+		$("#projects h3").css({ 'color': '#fff' });
 		// if ($("#background").hasClass("visible") !== true) {
 		// 	$("html").css({'background-color': '#d85030'});
 		// }

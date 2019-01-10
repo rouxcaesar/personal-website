@@ -251,12 +251,48 @@ small {
 }
 
 #projects {
+	display: flex;
 	/*padding-top: 180px;*/
 	font-size: 1.75em;
 	margin: auto;
 	max-width: 1000px;
 	margin-bottom: 20%;
 	/*margin-left: 30%*/;
+}
+
+.box .first {
+	width: 70%;
+  margin-left: 10%;
+}
+
+#projects h3 {
+	font-size: 2em;
+	font-weight: bold;
+  /*font-weight: 500;*/
+  /*text-transform: uppercase;*/
+  letter-spacing: 2px;
+  margin-bottom: 36px;
+}
+
+#projects h2 {
+	font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+#other-projects .full {
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+.full {
+	width: 105%;
+}
+
+img.full {
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 #projects p {
