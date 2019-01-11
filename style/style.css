@@ -87,15 +87,15 @@ header .inner-header a {
 }
 
 section {
-	opacity: 0;
+	/*opacity: 0;*/
 	transform: translate(0, 20px);
 	transition: all 3s;
 }
 
-section.visible {
+/*section.visible {
 	opacity: 1;
 	transform: translate(0, 0);
-}
+}*/
 
 #first, header {
   opacity: 0;
@@ -110,11 +110,11 @@ section.visible {
           transition: opacity 1s ease-in;
 }
 
-#first.load {
+#first {
 	opacity: 1;
 }
 
-header.load {
+header {
 	opacity: 1;
 	/*background-color: transparent;*/
 }
