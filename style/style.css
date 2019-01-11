@@ -160,7 +160,7 @@ small {
 	font-size: 1.75em;
 }
 
-#background a button, #projects a button {
+#background a button, #projects a button, #spacecraft a button {
 	cursor: pointer;
 	/*background-color: #f7f7f7;*/
 	margin-top: 20px;
@@ -184,6 +184,12 @@ small {
 	/*max-width: 1000px;*/
 	margin-bottom: 20%;
 	/*margin-left: 30%*/;
+}
+
+#spacecraft a button {
+	background-color: #d85030;
+	color: #fff;
+	border: 2px solid #fff;
 }
 
 #spacecraft .box {
