@@ -66,6 +66,14 @@ header .inner-header a {
   align-items: center;
 }
 
+header a.link:hover {
+	color: grey;
+}
+
+nav a.header-icon-link:hover {
+  filter: invert(80%);
+}
+
 .header-icon-link {
 	display: block;
 	margin-left: 1rem;
@@ -253,6 +261,7 @@ small {
 
 #presentation_details p a {
 	color: #fff;
+	text-decoration: underline;
 	
 }
 
