@@ -42,9 +42,15 @@
       </div>
 
       <div id="introduction">
-        <h2 id="greeting">Hello</h2>
+        <h2 id="greeting">Hi, I'm Julius</h2>
         
-        <p id="intro">I'm Julius Zerwick, a software engineer in New York City. I'm a co-creator of <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a>, a real-time, collaborative REPL and editor that executes code in the browser for Ruby, JavaScript, and Python.
+        <p id="intro">I'm a software engineer in New York City. 
+          <br/>
+          <br/>
+          I'm a co-creator of <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a>, a real-time, collaborative REPL (Read-Eval-Print-Loop) and editor that executes code in the browser for Ruby, JavaScript, and Python.
+          <br/>
+          <br/>
+          <a href="#background">More about me.</a>
         </p>
 
       </div>
@@ -57,48 +63,87 @@
     </div>
 
     <section id="spacecraft">
-      <a href="https://spacecraft-repl.github.io/" target="_blank">
-        <img id="spacecraft-logo" src="assets/spacecraft_logo_withtext_dark.png" />
-      </a>
-      <p class="description">
-          A real-time, collaborative REPL and editor that allows developers to experiment with Ruby, JavaScript, and Python without any configurations. Built with Node.js, Docker, and WebSockets. Click the logo to find out more!
-      </p>
+      <article>
+        <div class="box">
+          <a href="https://spacecraft-repl.github.io/" target="_blank">
+            <img id="spacecraft-logo" src="assets/spacecraft_logo_withtext_dark.png" />
+          </a>
+          <p class="description">
+            <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a> real-time, collaborative REPL and editor that allows developers to experiment with Ruby, JavaScript, and Python without any configurations. Built with Node.js, Docker, and WebSockets. Click the logo to find out more!
+          </p>
+        </div>
+      </article>
+      <div id="app">
+        <img src="https://cdn-images-1.medium.com/max/1800/1*bOtQ1SOiL45WRd1MBzMaIg.gif" />
+      </div>
     </section>
 
     <section id="presentation">
-      <iframe width="420" height="315"
+      <iframe width="550" height="365"
         src="https://www.youtube.com/embed/dNk4UHNP_Ps" scrolling="no" allowfullscreen>
       </iframe>
       <div id="presentation_details">
         <h3>SpaceCraft Tech Talk</h3>
         <p>
-          I gave a tech talk on <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a> titled "SpaceCraft: Building a Real-Time Collaborative REPL" at the Austin Nodejs meetup on December 19, 2018.
-        </p>
-        <p>
-          Slides for the tech talk can be found <a class="slides" href="https://docs.google.com/presentation/d/1ETptl4Dt4c91ZNb6ZpnZf4wU1C-y5cYdkS3iWKE355U/edit?usp=sharing" target="_blank">here.</a>
+          I recently gave a tech talk on <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a> titled "SpaceCraft: Building a Real-Time Collaborative REPL" at the Austin Nodejs meetup on December 19, 2018.
         </p>
       </div>
     </section>
 
-    <section id="lander">
-      <a href="https://github.com/spacecraft-repl/lander" target="_blank">
-        <img id="lander-logo" src="assets/lander_logo_type.png" />
-      </a>
-      <p class="coming-soon">Coming Soon!</p>
-      <br />
-      <p class="description">
-        A Ruby gem that makes it easy to log your data structure to the console and gain a clearer sense of what's happening in your code. Designed to help developers practice and ace their coding challenges. Click the logo to find out more!
-      </p>
+    <section id="projects">
+      <article>
+        <div class="box first">
+          <h3>Other Projects</h4>
+          <h2>SpaceCraft: Proxy Server</h2>
+          <img class="full" src="assets/proxy-server.gif">
+          <p>I built a reverse proxy server from scratch using Node.js and Docker API which integrates with <a href="https://spacecraft-repl.com" target="_blank">SpaceCraft</a>. The proxy server manages multiple user sessions, initializes containers, and forwards clients' requests to the appropriate containers.</p>
+          <a href="https://spacecraft-repl.com/whitepaper" target="_blank">
+            <button>Read more</button>
+          </a>
+        </div>
+      </article>
+
+      <article>
+        <div class="box last">
+          <h4 class="placeholder">_</h4>
+
+          <h2>Reaction<img src=""></h2>
+          <p>
+            Built a partial clone of the popular Trello project management app which included CRUD operations, scheduling, and tagging for cards and lists. Designed a React/Redux frontend with a Rails backend API.
+          </p> 
+
+          <br/>    
+
+          <h2>Lander<img src=""></h2>
+          <p>
+            A Ruby gem that makes it easy to log your data structure to the console and gain a clearer sense of what's happening in your code. Designed to help developers practice and ace their coding challenges.
+          </p>
+  
+        </div>
+      </article>
+
+        <!-- <img id="lander-logo" src="assets/lander_logo_type.png" /> -->
+      <!-- <p class="description">
+        A Ruby gem that makes it easy to log your data structure to the console and gain a clearer sense of what's happening in your code. Designed to help developers practice and ace their coding challenges.
+      </p> -->
     </section>
 
     <section id="background">
-      <h2>About Me</h2>
+      <h2>More About Me</h2>
 
-      <p class="about">I'm a full stack software engineer with a B.Sc. in Physics from the University of Texas at Austin. My interests include web development, devops, and distributed/decentralized systems. I'm always eager to learn something new and love working on challenging projects.</p>
+      <p class="about">I'm a full stack software engineer with interests in web development, devops, and distributed/decentralized systems. I'm always eager to learn something new and love working on challenging projects.</p>
 
-      <p class="about"> I strive to write clean, scalable code and to build projects that improves our lives. I have multiple years of experience developing fullstack applications and backend development projects in Node.js/JavaScript, Ruby on Rails, React, Docker and SQL.</p>
+      <p class="about"> I strive to write clean, scalable code and to work on challenging projects. I have multiple years of experience developing fullstack applications and backend development projects in Node.js, JavaScript, Ruby on Rails, React, Docker and SQL.</p>
 
-      <p class="about">I'm currently open for new opportunities! Feel free to reach out to me if you'd like to talk.</p>
+      <p class="about">I'm currently open for new opportunities! Feel free to reach out to me if you'd like to talk or discuss anything about software engineering.</p>
+
+      <a href="assets/julius-zerwick-resume-v3.pdf" target="_blank">
+        <button>Resume</button>
+      </a>
+
+      <a href="mailto:jrzerwick@gmail.com" target="_blank">
+        <button>Contact Me</button>
+      </a>
     </section>
 
 	</body>
