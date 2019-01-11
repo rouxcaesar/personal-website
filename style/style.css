@@ -184,7 +184,7 @@ small {
 	font-size: 1.75em;
 	margin: auto;
 	/*max-width: 1000px;*/
-	margin-bottom: 20%;
+	/*margin-bottom: 20%;*/
 	/*margin-left: 30%*/;
 }
 
@@ -221,13 +221,15 @@ small {
 }
 
 #presentation {
+	background-color: #435169;
+	height: 100vh;
 	display: flex;
 	padding-top: 140px;
 	font-size: 1.5em;
 	color: #fff;
 	margin: auto;
 	max-width: 100%;
-	margin-bottom: 20%;
+	/*margin-bottom: 20%;*/
 }
 
 #presentation iframe {
