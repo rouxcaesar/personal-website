@@ -66,6 +66,14 @@ header .inner-header a {
   align-items: center;
 }
 
+header a.link:hover {
+	color: grey;
+}
+
+nav a.header-icon-link:hover {
+  filter: invert(80%);
+}
+
 .header-icon-link {
 	display: block;
 	margin-left: 1rem;
@@ -87,15 +95,15 @@ header .inner-header a {
 }
 
 section {
-	opacity: 0;
+	/*opacity: 0;*/
 	transform: translate(0, 20px);
 	transition: all 3s;
 }
 
-section.visible {
+/*section.visible {
 	opacity: 1;
 	transform: translate(0, 0);
-}
+}*/
 
 #first, header {
   opacity: 0;
@@ -110,11 +118,11 @@ section.visible {
           transition: opacity 1s ease-in;
 }
 
-#first.load {
+#first {
 	opacity: 1;
 }
 
-header.load {
+header {
 	opacity: 1;
 	/*background-color: transparent;*/
 }
@@ -160,7 +168,7 @@ small {
 	font-size: 1.75em;
 }
 
-#background a button, #projects a button {
+#background a button, #projects a button, #spacecraft a button {
 	cursor: pointer;
 	/*background-color: #f7f7f7;*/
 	margin-top: 20px;
@@ -177,13 +185,21 @@ small {
 
 /* the top of this section is being calculated from the top of it's padding!*/
 #spacecraft {
+	background-color: #d85030;
 	display: flex;
+	height: 100vh;
 	padding-top: 80px;
 	font-size: 1.75em;
 	margin: auto;
 	/*max-width: 1000px;*/
-	margin-bottom: 20%;
+	/*margin-bottom: 20%;*/
 	/*margin-left: 30%*/;
+}
+
+#spacecraft a button {
+	background-color: #d85030;
+	color: #fff;
+	border: 2px solid #fff;
 }
 
 #spacecraft .box {
@@ -200,6 +216,7 @@ small {
 
 #app img {
 	max-width: 105%;
+	margin-top: -45%;
   margin-left: -6.5%;
 	border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
@@ -212,13 +229,15 @@ small {
 }
 
 #presentation {
+	background-color: #435169;
+	height: 100vh;
 	display: flex;
 	padding-top: 140px;
 	font-size: 1.5em;
 	color: #fff;
 	margin: auto;
 	max-width: 100%;
-	margin-bottom: 20%;
+	/*margin-bottom: 20%;*/
 }
 
 #presentation iframe {
@@ -242,6 +261,7 @@ small {
 
 #presentation_details p a {
 	color: #fff;
+	text-decoration: underline;
 	
 }
 
@@ -252,11 +272,16 @@ small {
 
 #projects {
 	display: flex;
-	/*padding-top: 180px;*/
+	background-color: #7b899d;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	font-size: 1.75em;
 	margin: auto;
-	max-width: 1200px;
-	margin-bottom: 20%;
+	padding-left: 40px;
+	padding-right: 20px;
+	max-width: 100%;
+	/*max-width: 1200px;*/
+	margin-bottom: 15%;
 	/*margin-left: 30%*/;
 }
 
@@ -271,13 +296,14 @@ small {
 
 .box.last {
 	margin-top: 3.5%;
-	margin-left: 20%;
-  width: 90%;
+	margin-left: 5%;
+  width: 80%;
 }
 
 #projects h3 {
 	font-size: 1.5em;
 	font-weight: bold;
+	color: #fff;
   /*font-weight: 500;*/
   /*text-transform: uppercase;*/
   /*letter-spacing: 2px;*/
@@ -286,6 +312,7 @@ small {
 
 #projects h2 {
 	font-size: 30px;
+	color: #fff;
   /*margin-bottom: 25px;*/
   font-weight: 500;
   white-space: nowrap;
@@ -312,7 +339,7 @@ small {
 }
 
 .full {
-	width: 105%;
+	width: 90%;
 }
 
 img.full {
