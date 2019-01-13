@@ -3,6 +3,7 @@
 	<head>
 		<title>Julius Zerwick | Software Engineer</title>
     <meta name="image" property="og:image" content="assets/cropped-headshot.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" media="all" href="style/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="style/style.css" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
@@ -64,9 +65,10 @@
     <section id="spacecraft">
       <article>
         <div class="box">
-          <a href="https://spacecraft-repl.github.io/" target="_blank">
-            <img id="spacecraft-logo" src="assets/spacecraft_logo_withtext_dark.png" />
-          </a>
+          <img id="spacecraft-logo" src="assets/spacecraft_logo_withtext_dark.png" />
+          <div class="mobile">
+            <img src="https://cdn-images-1.medium.com/max/1800/1*bOtQ1SOiL45WRd1MBzMaIg.gif" />
+          </div>
           <p class="description">
             <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a> is a real-time, collaborative REPL and editor that allows developers to experiment with Ruby, JavaScript, and Python without any configurations. Built with Node.js, Docker, and WebSockets.
           </p>
@@ -75,22 +77,32 @@
             <button>Read More</button>
           </a>
         </div>
+        <div class="app">
+          <img src="https://cdn-images-1.medium.com/max/1800/1*bOtQ1SOiL45WRd1MBzMaIg.gif" />
+        </div>
       </article>
-      <div id="app">
-        <img src="https://cdn-images-1.medium.com/max/1800/1*bOtQ1SOiL45WRd1MBzMaIg.gif" />
-      </div>
     </section>
 
     <section id="presentation">
-      <iframe width="550" height="365"
-        src="https://www.youtube.com/embed/dNk4UHNP_Ps" scrolling="no" allowfullscreen>
-      </iframe>
-      <div id="presentation_details">
-        <h3>SpaceCraft Tech Talk</h3>
-        <p>
-          I recently gave a tech talk on <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a> titled "SpaceCraft: Building a Real-Time Collaborative REPL" at the Austin Nodejs meetup on December 19, 2018.
-        </p>
-      </div>
+      <article>
+        <div class="fullscreen">
+          <iframe width="550" height="365"
+            src="https://www.youtube.com/embed/dNk4UHNP_Ps" scrolling="no" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="dummy"></div>
+        <div id="presentation_details">
+          <h3>SpaceCraft Tech Talk</h3>
+          <div class="mobile">
+            <iframe width="100%" height="300px"
+            src="https://www.youtube.com/embed/dNk4UHNP_Ps" scrolling="no" allowfullscreen>
+            </iframe>
+          </div>
+          <p>
+            I recently gave a tech talk on <a href="https://spacecraft-repl.github.io/" target="_blank">SpaceCraft</a> titled "SpaceCraft: Building a Real-Time Collaborative REPL" at the Austin Nodejs meetup on December 19, 2018.
+          </p>
+        </div>
+      </article>
     </section>
 
     <section id="projects">
@@ -104,15 +116,13 @@
             <button>Read more</button>
           </a>
         </div>
-      </article>
-
-      <article>
+        <div class="dummy"></div>
         <div class="box last">
           <h4 class="placeholder">_</h4>
 
           <h2>Reaction<img src=""></h2>
           <p>
-            Built a partial clone of the popular Trello project management app which included CRUD operations, scheduling, and tagging for cards and lists. Designed a React/Redux frontend with a Rails backend API.
+            Built a ticket management app which included CRUD operations, scheduling, and tagging for cards and lists. Designed a React/Redux frontend with a Rails backend API.
           </p> 
 
           <br/>    
@@ -121,27 +131,36 @@
           <p>
             A Ruby gem that makes it easy to log your data structure to the console and gain a clearer sense of what's happening in your code. Designed to help developers practice and ace their coding challenges.
           </p>
+
+          <br/>    
+
+          <h2>Postit<img src=""></h2>
+          <p>
+            A social app built with Ruby on Rails and used for posting stories and comments. Allows you to add, edit, delete, upvote, and downvote posts. You can also create and log into accounts.
+          </p>
   
         </div>
       </article>
     </section>
 
     <section id="background">
-      <h2>More About Me</h2>
+      <article>
+        <h2>More About Me</h2>
 
-      <p class="about">I'm a full stack software engineer with interests in web development, DevOps, and distributed/decentralized systems. I'm always eager to learn something new and love working on challenging projects.</p>
+        <p class="about">I'm a full stack software engineer with interests in web development, DevOps, and distributed/decentralized systems. I'm always eager to learn something new and love working on challenging projects.</p>
 
-      <p class="about"> I strive to write clean, scalable code and I have multiple years of experience developing full stack applications and back-end development projects using Node.js, JavaScript, Ruby on Rails, React, Docker and SQL.</p>
+        <p class="about"> I strive to write clean, scalable code and I have multiple years of experience developing full stack applications and back-end development projects using Node.js, JavaScript, Ruby on Rails, React, Docker and SQL.</p>
 
-      <p class="about">I'm currently open for new opportunities! Feel free to reach out to me if you'd like to talk or discuss anything about software engineering.</p>
+        <p class="about">I'm currently open for new opportunities! Feel free to reach out to me if you'd like to talk or discuss anything about software engineering.</p>
 
-      <a href="assets/julius-zerwick-resume-v3.pdf" target="_blank">
-        <button>Resume</button>
-      </a>
+        <a href="assets/julius-zerwick-resume-v3.pdf" target="_blank">
+          <button>Resume</button>
+        </a>
 
-      <a href="mailto:jrzerwick@gmail.com" target="_blank">
-        <button>Contact Me</button>
-      </a>
+        <a href="mailto:jrzerwick@gmail.com" target="_blank">
+          <button>Contact Me</button>
+        </a>
+      </article>
     </section>
 
 	</body>

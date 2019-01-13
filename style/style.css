@@ -16,8 +16,11 @@ body {
 }
 
 article {
-	flex: 1.02;
-	max-width: 50%;
+	display: flex;
+	align-self: center;
+	width: 80%;
+	/*flex: 1.02;*/
+	/*max-width: 50%;*/
 	margin: 0;
 	padding: 0;
 	/*display: flex;
@@ -44,8 +47,9 @@ header .inner-header {
 	width: 100%;
 	align-items: center;
 	height: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
 	position: relative;
+  padding: 0 8%;
 }
 
 header .inner-header a {
@@ -84,7 +88,7 @@ nav a.header-icon-link:hover {
 	display: flex;
 	order: 1;
 	align-items: center;
-	margin-left: -100px;
+	/*margin-left: -100px;*/
 	/*flex: 0 1 15rem;*/
 }
 
@@ -98,6 +102,31 @@ section {
 	/*opacity: 0;*/
 	transform: translate(0, 20px);
 	transition: all 3s;
+	height: 100vh;
+	min-height: 411px;
+}
+
+#intro a:hover {
+	color: grey;
+}
+
+.mobile, .mobile img, .mobile iframe{
+	display: none;	
+}
+
+
+#spacecraft a:hover, #presentation a:hover, #projects a:hover {
+	color: #ffc022 !important;
+}
+
+#spacecraft button:hover, #projects button:hover {
+	color: #435619 !important;
+	background-color: #fff;
+}
+
+#background button:hover {
+	color: #fff;
+	background-color: #000;
 }
 
 /*section.visible {
@@ -156,12 +185,19 @@ small {
 }
 
 #background {
+	display: flex;
 	/*padding-top: 80px;*/
 	margin: auto;
-	max-width: 1000px;
+	/*max-width: 1000px;*/
 	/*margin-bottom: 10%;*/
-	margin-top: -2.5%;
-	margin-bottom: 10%;
+	/*margin-top: -2.5%;*/
+	justify-content: center;
+	/*margin-bottom: 2%;*/
+}
+
+#background article {
+	display: block;
+	align-self: flex-start;
 }
 
 #background p {
@@ -187,10 +223,11 @@ small {
 #spacecraft {
 	background-color: #d85030;
 	display: flex;
-	height: 100vh;
-	padding-top: 80px;
+	/*height: 100vh;*/
+	/*padding-top: 80px;*/
 	font-size: 1.75em;
 	margin: auto;
+	justify-content: center;
 	/*max-width: 1000px;*/
 	/*margin-bottom: 20%;*/
 	/*margin-left: 30%*/;
@@ -203,21 +240,24 @@ small {
 }
 
 #spacecraft .box {
-	margin-left: 7%;
-  width: 80%;
+	/*margin-left: 7%;*/
+  /*width: 80%;*/
+  flex: 2;
 }
 
-#app {
-	flex: 1;
+.app {
+	flex: 3;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 4%;
 }
 
-#app img {
-	max-width: 105%;
-	margin-top: -45%;
-  margin-left: -6.5%;
+.app img {
+	width: 95%;
+	/*max-width: 105%;*/
+	/*margin-top: -45%;*/
+  /*margin-left: -6.5%;*/
 	border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
@@ -230,9 +270,10 @@ small {
 
 #presentation {
 	background-color: #435169;
-	height: 100vh;
+	/*height: 100vh;*/
 	display: flex;
-	padding-top: 140px;
+	justify-content: center;
+	/*padding-top: 140px;*/
 	font-size: 1.5em;
 	color: #fff;
 	margin: auto;
@@ -240,22 +281,32 @@ small {
 	/*margin-bottom: 20%;*/
 }
 
+.dummy {
+	width: 40px;
+}
+
 #presentation iframe {
-	margin-left: 5%;
+	flex: 2;
+	/*margin-left: 5%;*/
+}
+
+#presentation article {
+	justify-content: center;
 }
 
 #presentation_details {
-	display: inline;
+	flex: 1;
+	/*display: inline;*/
 	/*margin-top: -3.5%; */
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	margin-bottom: 13%;
-	float: right;
-	width: 50%;
+	/*margin-left: 2.5%;*/
+	/*margin-right: 2.5%;*/
+	/*margin-bottom: 13%;*/
+	/*float: right;*/
+	/*width: 50%;*/
 }
 
 #presentation_details h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -271,33 +322,35 @@ small {
 }
 
 #projects {
+	justify-content: center;
+	/*height: 100vh;*/
 	display: flex;
 	background-color: #7b899d;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	/*padding-top: 60px;*/
+	/*padding-bottom: 60px;*/
 	font-size: 1.75em;
 	margin: auto;
-	padding-left: 40px;
-	padding-right: 20px;
+	/*padding-left: 40px;*/
+	/*padding-right: 20px;*/
 	max-width: 100%;
 	/*max-width: 1200px;*/
 	margin-bottom: 15%;
 	/*margin-left: 30%*/;
 }
 
-/*.box.first {
-	width: 70%;
-  margin-left: 10%;
-}*/
+.box.first {
+	flex: 1;
+}
 
 .placeholder {
   filter: opacity(0%);
 }
 
 .box.last {
-	margin-top: 3.5%;
-	margin-left: 5%;
+	/*margin-top: 3.5%;*/
+	/*margin-left: 5%;*/
   width: 80%;
+  flex: 1;
 }
 
 #projects h3 {
@@ -339,7 +392,7 @@ small {
 }
 
 .full {
-	width: 90%;
+	width: 100%;
 }
 
 img.full {
@@ -349,7 +402,7 @@ img.full {
 
 #projects p {
 	color: #b9c1cb;
-	width: 110%;
+	/*width: 110%;*/
 }
 
 /*#projects p.coming-soon {
@@ -474,7 +527,7 @@ h2 {
  }
 
 .description {
-	font-size: 1em;
+	font-size: 0.85em;
 	font-weight: 200;
 }
 
@@ -512,134 +565,113 @@ a.btn-cta-primary, .btn-cta-primary {
     font-weight: bold;
 }
 
-@media only screen
-	and (max-width: 1026px) {
 	
-		html {
-			background: #f7f7f7;
-		}
-	
-		body {
-			/*padding-top: 5em;
-			padding-bottom: 5em;
-			margin: 0 5%;*/
-		}
-
-		.header-links {
-			/*display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;*/
-			margin-left: 0;
-		}
-
-		#first {
-			padding-top: 50px;
-			/*padding-top: 170px;*/
-			/*margin: auto;*/
-			/*max-width: 1000px;*/
-			margin-bottom: 30%;
-		}
-
-		#picture {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-			padding: 0;
-			float: none;
-		}
-
-		#picture img {
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-		}
-
-		#introduction {
-			display: block;
-		}
-
-		#greeting, #background {
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-
-		#intro, p.about {
-			/*font-size: 1.5em;*/
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;	
-			width: 80%;
-		}
-
-		#scroll {
-			margin-top: -4.5%;
-			margin-left: auto;
-			margin-right: auto;
-			width: 5%;
-			cursor: pointer;
-			font-family: "Roboto Mono", monospace;
-			color: #000;
-		}
-
-		#scroll .line {
-		  height: 45px;
-		  width: 1px;
-		  margin: 10px auto 30px auto;
-		  background: #000;
-		}
-
-		#spacecraft, #projects {
-			margin-bottom: 40%;
-		}
-
-		#spacecraft-logo, #lander-logo {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 80%;
-			padding: 0;
-			float: none;
-		}
-
-		#spacecraft p, #projects p {
-			/*font-size: 1.5em;*/
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;	
-			width: 80%;
-		}
-
-		#projects {
-			margin-bottom: 30%
-		}
-		
-		p, a, li {
-			max-width: none;
-			line-height: 1.25em;
-		}
-		
-		li {
-			padding: 1em .25em;
-		}
-		
-		p {
-			/* margin: 1em auto; */
-		}
-		
-	}
-	
-@media only screen 
-  	and (max-device-width: 667px) { 
+@media screen 
+  	and (max-width: 640px) { 
 	  	body {
 			/*font-size: 100%;*/
 		}
 
-		#intro, #background p.about {
+		#first {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 0 40px;
+		}
+
+		#picture {
+			margin-left: 0;
+			padding-right: 0;
+
+		}
+
+		#introduction {
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		header {
+			padding: 30px;
+			box-sizing: border-box;
+			font-size: 0.90em;
+			white-space: nowrap;
+		}
+
+		#scroll {
+			display: none;
+		}
+
+		article {
+			flex-direction: column !important;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.mobile {
+			display: block;
+			/*width: 100%;*/
+		}
+
+		.mobile iframe {
+			padding-top: 20px;
+			display: block;
+			width: 100vw;
+		}
+
+		.mobile img {
+			display: block;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+
+		.app, header .header-links {
+			display: none;
+		}
+
+		header .inner-header {
+			padding: 0;
+			justify-content: center;
+		}
+
+		header .header-icons {
+			justify-content: center;
+		}
+
+		.fullscreen {
+			display: none;
+		}
+
+		#presentation {
+			height: 800px;
+		}
+
+		#presentation_details h3, #presentation_details p {
+			padding: 0 10%;
+		}
+
+		#projects {
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		.box.last {
+			width: auto;
+		}
+
+		#background {
+			padding-bottom: 40px;
+			height: auto;
+		}
+
+		#background p {
 			font-size: 1.25em;
 		}
+
+		/*#intro, #background p.about {
+			font-size: 1.25em;
+		}*/
 		
   }
 
