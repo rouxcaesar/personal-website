@@ -110,6 +110,11 @@ section {
 	color: grey;
 }
 
+.mobile, .mobile img, .mobile iframe{
+	display: none;	
+}
+
+
 #spacecraft a:hover, #presentation a:hover, #projects a:hover {
 	color: #ffc022 !important;
 }
@@ -240,7 +245,7 @@ small {
   flex: 2;
 }
 
-#app {
+.app {
 	flex: 3;
   display: flex;
   justify-content: flex-end;
@@ -248,7 +253,7 @@ small {
   margin-top: 4%;
 }
 
-#app img {
+.app img {
 	width: 95%;
 	/*max-width: 105%;*/
 	/*margin-top: -45%;*/
@@ -560,134 +565,113 @@ a.btn-cta-primary, .btn-cta-primary {
     font-weight: bold;
 }
 
-@media only screen
-	and (max-width: 1026px) {
 	
-		html {
-			background: #f7f7f7;
-		}
-	
-		body {
-			/*padding-top: 5em;
-			padding-bottom: 5em;
-			margin: 0 5%;*/
-		}
-
-		.header-links {
-			/*display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;*/
-			margin-left: 0;
-		}
-
-		#first {
-			padding-top: 50px;
-			/*padding-top: 170px;*/
-			/*margin: auto;*/
-			/*max-width: 1000px;*/
-			margin-bottom: 30%;
-		}
-
-		#picture {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-			padding: 0;
-			float: none;
-		}
-
-		#picture img {
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-		}
-
-		#introduction {
-			display: block;
-		}
-
-		#greeting, #background {
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-
-		#intro, p.about {
-			/*font-size: 1.5em;*/
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;	
-			width: 80%;
-		}
-
-		#scroll {
-			margin-top: -4.5%;
-			margin-left: auto;
-			margin-right: auto;
-			width: 5%;
-			cursor: pointer;
-			font-family: "Roboto Mono", monospace;
-			color: #000;
-		}
-
-		#scroll .line {
-		  height: 45px;
-		  width: 1px;
-		  margin: 10px auto 30px auto;
-		  background: #000;
-		}
-
-		#spacecraft, #projects {
-			margin-bottom: 40%;
-		}
-
-		#spacecraft-logo, #lander-logo {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 80%;
-			padding: 0;
-			float: none;
-		}
-
-		#spacecraft p, #projects p {
-			/*font-size: 1.5em;*/
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;	
-			width: 80%;
-		}
-
-		#projects {
-			margin-bottom: 30%
-		}
-		
-		p, a, li {
-			max-width: none;
-			line-height: 1.25em;
-		}
-		
-		li {
-			padding: 1em .25em;
-		}
-		
-		p {
-			/* margin: 1em auto; */
-		}
-		
-	}
-	
-@media only screen 
-  	and (max-device-width: 667px) { 
+@media screen 
+  	and (max-width: 640px) { 
 	  	body {
 			/*font-size: 100%;*/
 		}
 
-		#intro, #background p.about {
+		#first {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 0 40px;
+		}
+
+		#picture {
+			margin-left: 0;
+			padding-right: 0;
+
+		}
+
+		#introduction {
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		header {
+			padding: 30px;
+			box-sizing: border-box;
+			font-size: 0.90em;
+			white-space: nowrap;
+		}
+
+		#scroll {
+			display: none;
+		}
+
+		article {
+			flex-direction: column !important;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.mobile {
+			display: block;
+			/*width: 100%;*/
+		}
+
+		.mobile iframe {
+			padding-top: 20px;
+			display: block;
+			width: 100vw;
+		}
+
+		.mobile img {
+			display: block;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+
+		.app, header .header-links {
+			display: none;
+		}
+
+		header .inner-header {
+			padding: 0;
+			justify-content: center;
+		}
+
+		header .header-icons {
+			justify-content: center;
+		}
+
+		.fullscreen {
+			display: none;
+		}
+
+		#presentation {
+			height: 800px;
+		}
+
+		#presentation_details h3, #presentation_details p {
+			padding: 0 10%;
+		}
+
+		#projects {
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		.box.last {
+			width: auto;
+		}
+
+		#background {
+			padding-bottom: 40px;
+			height: auto;
+		}
+
+		#background p {
 			font-size: 1.25em;
 		}
+
+		/*#intro, #background p.about {
+			font-size: 1.25em;
+		}*/
 		
   }
 
