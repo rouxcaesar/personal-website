@@ -102,6 +102,8 @@ section {
 	/*opacity: 0;*/
 	transform: translate(0, 20px);
 	transition: all 3s;
+	height: 100vh;
+	min-height: 411px;
 }
 
 #intro a:hover {
@@ -183,9 +185,14 @@ small {
 	margin: auto;
 	/*max-width: 1000px;*/
 	/*margin-bottom: 10%;*/
-	margin-top: -2.5%;
+	/*margin-top: -2.5%;*/
 	justify-content: center;
-	/*margin-bottom: 10%;*/
+	/*margin-bottom: 2%;*/
+}
+
+#background article {
+	display: block;
+	align-self: flex-start;
 }
 
 #background p {
@@ -211,7 +218,7 @@ small {
 #spacecraft {
 	background-color: #d85030;
 	display: flex;
-	height: 100vh;
+	/*height: 100vh;*/
 	/*padding-top: 80px;*/
 	font-size: 1.75em;
 	margin: auto;
@@ -258,7 +265,7 @@ small {
 
 #presentation {
 	background-color: #435169;
-	height: 100vh;
+	/*height: 100vh;*/
 	display: flex;
 	justify-content: center;
 	/*padding-top: 140px;*/
@@ -270,7 +277,7 @@ small {
 }
 
 .dummy {
-	width: 30px;
+	width: 40px;
 }
 
 #presentation iframe {
@@ -311,7 +318,7 @@ small {
 
 #projects {
 	justify-content: center;
-	height: 100vh;
+	/*height: 100vh;*/
 	display: flex;
 	background-color: #7b899d;
 	/*padding-top: 60px;*/
