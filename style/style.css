@@ -17,6 +17,7 @@ body {
 
 article {
 	display: flex;
+	align-self: center;
 	width: 80%;
 	/*flex: 1.02;*/
 	/*max-width: 50%;*/
@@ -177,12 +178,14 @@ small {
 }
 
 #background {
+	display: flex;
 	/*padding-top: 80px;*/
 	margin: auto;
-	max-width: 1000px;
+	/*max-width: 1000px;*/
 	/*margin-bottom: 10%;*/
 	margin-top: -2.5%;
-	margin-bottom: 10%;
+	justify-content: center;
+	/*margin-bottom: 10%;*/
 }
 
 #background p {
@@ -209,7 +212,7 @@ small {
 	background-color: #d85030;
 	display: flex;
 	height: 100vh;
-	padding-top: 80px;
+	/*padding-top: 80px;*/
 	font-size: 1.75em;
 	margin: auto;
 	justify-content: center;
@@ -257,7 +260,8 @@ small {
 	background-color: #435169;
 	height: 100vh;
 	display: flex;
-	padding-top: 140px;
+	justify-content: center;
+	/*padding-top: 140px;*/
 	font-size: 1.5em;
 	color: #fff;
 	margin: auto;
@@ -265,22 +269,32 @@ small {
 	/*margin-bottom: 20%;*/
 }
 
+.dummy {
+	width: 30px;
+}
+
 #presentation iframe {
-	margin-left: 5%;
+	flex: 2;
+	/*margin-left: 5%;*/
+}
+
+#presentation article {
+	justify-content: center;
 }
 
 #presentation_details {
-	display: inline;
+	flex: 1;
+	/*display: inline;*/
 	/*margin-top: -3.5%; */
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	margin-bottom: 13%;
-	float: right;
-	width: 50%;
+	/*margin-left: 2.5%;*/
+	/*margin-right: 2.5%;*/
+	/*margin-bottom: 13%;*/
+	/*float: right;*/
+	/*width: 50%;*/
 }
 
 #presentation_details h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -296,33 +310,35 @@ small {
 }
 
 #projects {
+	justify-content: center;
+	height: 100vh;
 	display: flex;
 	background-color: #7b899d;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	/*padding-top: 60px;*/
+	/*padding-bottom: 60px;*/
 	font-size: 1.75em;
 	margin: auto;
-	padding-left: 40px;
-	padding-right: 20px;
+	/*padding-left: 40px;*/
+	/*padding-right: 20px;*/
 	max-width: 100%;
 	/*max-width: 1200px;*/
 	margin-bottom: 15%;
 	/*margin-left: 30%*/;
 }
 
-/*.box.first {
-	width: 70%;
-  margin-left: 10%;
-}*/
+.box.first {
+	flex: 1;
+}
 
 .placeholder {
   filter: opacity(0%);
 }
 
 .box.last {
-	margin-top: 3.5%;
-	margin-left: 5%;
+	/*margin-top: 3.5%;*/
+	/*margin-left: 5%;*/
   width: 80%;
+  flex: 1;
 }
 
 #projects h3 {
@@ -364,7 +380,7 @@ small {
 }
 
 .full {
-	width: 90%;
+	width: 100%;
 }
 
 img.full {
@@ -374,7 +390,7 @@ img.full {
 
 #projects p {
 	color: #b9c1cb;
-	width: 110%;
+	/*width: 110%;*/
 }
 
 /*#projects p.coming-soon {
