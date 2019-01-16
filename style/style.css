@@ -171,6 +171,7 @@ header {
 	cursor: pointer;
 	font-family: "Roboto Mono", monospace;
 	color: #000;
+	cursor: auto;
 }
 
 #scroll .line {
